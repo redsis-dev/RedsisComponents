@@ -1,0 +1,75 @@
+package pckRedsis;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  dbrtl,
+  dsnap,
+  FireDAC,
+  FireDACCommon,
+  FireDACCommonDriver,
+  soaprtl,
+  vcl,
+  vclFireDAC,
+  FireDACIBDriver,
+  ibxpress,
+  designide,
+  fmx,
+  fmxFireDAC;
+
+contains
+  uRDPageControl in '..\Sources\Controls\uRDPageControl.pas',
+  uFDCConnection in '..\Sources\DataComponents\Fdc\uFDCConnection.pas',
+  uFDCDataSet in '..\Sources\DataComponents\Fdc\uFDCDataSet.pas',
+  uFDCFieldType in '..\Sources\DataComponents\Fdc\uFDCFieldType.pas',
+  uFDCMemTable in '..\Sources\DataComponents\Fdc\uFDCMemTable.pas',
+  uFDCQuery in '..\Sources\DataComponents\Fdc\uFDCQuery.pas',
+  uFDCTable in '..\Sources\DataComponents\Fdc\uFDCTable.pas',
+  uFDCTransaction in '..\Sources\DataComponents\Fdc\uFDCTransaction.pas',
+  uFieldType in '..\Sources\DataComponents\uFieldType.pas',
+  uLib in '..\Sources\DataComponents\uLib.pas',
+  uRDConnection in '..\Sources\DataComponents\uRDConnection.pas',
+  uRDDataSet in '..\Sources\DataComponents\uRDDataSet.pas',
+  uRDMemTable in '..\Sources\DataComponents\uRDMemTable.pas',
+  uRDQuery in '..\Sources\DataComponents\uRDQuery.pas',
+  uRDTable in '..\Sources\DataComponents\uRDTable.pas',
+  uRDTransaction in '..\Sources\DataComponents\uRDTransaction.pas',
+  uRDDBComboBox in '..\Sources\DataControls\uRDDBComboBox.pas',
+  uRDDBDateTimePicker in '..\Sources\DataControls\uRDDBDateTimePicker.pas',
+  uRDModuloDataModule in '..\Sources\DataModules\uRDModuloDataModule.pas',
+  uRegister in '..\Sources\uRegister.pas',
+  uRDDBCheckListBox in '..\Sources\DataControls\uRDDBCheckListBox.pas',
+  uRDComboBox in '..\Sources\Controls\uRDComboBox.pas',
+  uFDCCommand in '..\Sources\DataComponents\Fdc\uFDCCommand.pas',
+  uRDCommand in '..\Sources\DataComponents\uRDCommand.pas',
+  uRDCheckListBox in '..\Sources\Controls\uRDCheckListBox.pas',
+  uRDDBRadioButton in '..\Sources\DataControls\uRDDBRadioButton.pas',
+  uRDDBListBox in '..\Sources\DataControls\uRDDBListBox.pas';
+
+end.
